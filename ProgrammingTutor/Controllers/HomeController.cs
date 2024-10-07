@@ -1,21 +1,31 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ProgrammingTutor.Models;
+using Microsoft.Extensions.Logging; // Ensure to have this namespace for ILogger
+using System.Linq; // To use LINQ for querying the database
 
 namespace ProgrammingTutor.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly KidProgrammingContext _context; // Add the DbContext field
 
-        public HomeController(ILogger<HomeController> logger)
+        // Modify the constructor to include KidProgrammingContext
+        public HomeController(ILogger<HomeController> logger, KidProgrammingContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
+        // Modify the Index action to fetch data from the database
         public IActionResult Index()
         {
-            return View();
+            // Example: Fetch all tutorials from the database
+            var tutorials = _context.Tutorials.ToList();
+
+            // Pass the tutorials to the view
+            return View(tutorials);
         }
 
         public IActionResult Privacy()

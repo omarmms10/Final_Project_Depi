@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ProgrammingTutor.Models; // Make sure this namespace matches where your KidProgrammingContext is located
+
 namespace ProgrammingTutor
 {
     public class Program
@@ -9,6 +12,10 @@ namespace ProgrammingTutor
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            // Register the DbContext with dependency injection
+            builder.Services.AddDbContext<KidProgrammingContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -16,6 +23,7 @@ namespace ProgrammingTutor
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
             app.UseStaticFiles();
 
             app.UseRouting();
