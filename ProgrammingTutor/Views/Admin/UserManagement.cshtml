@@ -1,0 +1,35 @@
+﻿@model List<ProgrammingTutor.Models.UserRolesViewModel>
+
+<h2>User Management</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Roles</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var userRoles in Model)
+        {
+            <tr>
+                <td>@userRoles.User.Email</td>
+                <td>
+                    @foreach (var role in userRoles.Roles)
+                    {
+                        <span>@role</span>
+
+                        <br />
+                    }
+                </td>
+                <td>
+                    <a href="@Url.Action("ManageUser", new { id = userRoles.User.Id })" class="btn btn-primary">Manage</a>
+                    <form method="post" asp-action="DeleteUser" asp-route-id="@userRoles.User.Id" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ProgrammingTutor.Models.Feedback>
+
+<h2>All User Feedback</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tutorial</th>
+            <th>User</th>
+            <th>Feedback</th>
+            <th>Rating</th>
+            <th>Submitted Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var feedback in Model)
+        {
+            <tr>
+                <td>@feedback.Tutorial?.Title</td>
+                <td>@feedback.User?.UserName</td>
+                <td>@feedback.FeedbackText</td>
+                <td>@feedback.Rating</td>
+                <td>@feedback.SubmittedDate?.ToString("MM/dd/yyyy")</td>
+                <td>
+                    <form method="post" action="/Admin/DeleteFeedback">
+                        <input type="hidden" name="feedbackId" value="@feedback.FeedbackId" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

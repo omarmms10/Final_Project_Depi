@@ -1,0 +1,106 @@
+﻿<h2>Programming Tutorials</h2>
+
+<p>Learn programming by completing these fun tutorials from Scratch and Blockly:</p>
+
+<!-- Create a container for the tutorials -->
+<div class="tutorials-container">
+
+    <!-- Scratch Project -->
+    <div class="tutorial">
+        <h3>Scratch Project: Dot Programming</h3>
+        <iframe src="https://scratch.mit.edu/projects/10124551/embed" allowtransparency="true" width="800" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+        <!-- Automatically trigger start date update for Scratch tutorial when the page loads -->
+        <script>
+            window.onload = function () {
+                fetch('/Progress/UpdateProgress?tutorialId=1&completed=false', { method: 'POST' });
+            };
+        </script>
+
+        <!-- Mark Scratch Tutorial as Completed -->
+        <form method="post" action="/Progress/UpdateProgress?tutorialId=1&completed=true">
+            <button type="submit">Mark Scratch Tutorial As Completed</button>
+        </form>
+    </div>
+
+    <!-- Blockly Game: Puzzle -->
+    <div class="tutorial">
+        <h3>Blockly Game: Puzzle</h3>
+        <iframe src="https://blockly.games/puzzle?lang=en" width="800" height="800" frameborder="0" scrolling="no"></iframe>
+
+        <!-- Automatically trigger start date update for Blockly tutorial -->
+        <script>
+            window.onload = function () {
+                fetch('/Progress/UpdateProgress?tutorialId=2&completed=false', { method: 'POST' });
+            };
+        </script>
+
+        <!-- Mark Blockly Puzzle as Completed -->
+        <form method="post" action="/Progress/UpdateProgress?tutorialId=2&completed=true">
+            <button type="submit">Mark Blockly Puzzle As Completed</button>
+        </form>
+    </div>
+
+    <!-- Blockly Game: Maze -->
+    <div class="tutorial">
+        <h3>Blockly Game: Maze</h3>
+        <iframe src="https://blockly.games/maze?lang=en" width="800" height="800" frameborder="0" scrolling="no"></iframe>
+
+        <!-- Automatically trigger start date update for Maze tutorial -->
+        <script>
+            window.onload = function () {
+                fetch('/Progress/UpdateProgress?tutorialId=11&completed=false', { method: 'POST' });
+            };
+        </script>
+
+        <!-- Mark Blockly Maze as Completed -->
+        <form method="post" action="/Progress/UpdateProgress?tutorialId=11&completed=true">
+            <button type="submit">Mark Blockly Maze As Completed</button>
+        </form>
+    </div>
+
+    <!-- Blockly Game: Bird -->
+    <div class="tutorial">
+        <h3>Blockly Game: Bird</h3>
+        <iframe src="https://blockly.games/bird?lang=en" width="800" height="800" frameborder="0" scrolling="no"></iframe>
+
+        <!-- Automatically trigger start date update for Bird tutorial -->
+        <script>
+            window.onload = function () {
+                fetch('/Progress/UpdateProgress?tutorialId=12&completed=false', { method: 'POST' });
+            };
+        </script>
+
+        <!-- Mark Blockly Bird as Completed -->
+        <form method="post" action="/Progress/UpdateProgress?tutorialId=12&completed=true">
+            <button type="submit">Mark Blockly Bird As Completed</button>
+        </form>
+    </div>
+
+</div>
+
+<!-- Add some basic CSS to make the tutorials responsive and arranged side by side -->
+<style>
+    .tutorials-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-around;
+    }
+
+    .tutorial {
+        flex: 1 1 800px;
+        max-width: 800px;
+        margin-bottom: 40px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3; /* Keep a 4:3 ratio for better game display */
+    }
+
+    button {
+        margin-top: 10px;
+    }
+</style>

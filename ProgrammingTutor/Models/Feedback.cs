@@ -1,23 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 
-namespace ProgrammingTutor.Models;
-
-public partial class Feedback
+namespace ProgrammingTutor.Models
 {
-    public int FeedbackId { get; set; }
+    public partial class Feedback
+    {
+        public int FeedbackId { get; set; }
 
-    public int? UserId { get; set; }
+        public string? UserId { get; set; } // Foreign key to IdentityUser
 
-    public int? TutorialId { get; set; }
+        public int? TutorialId { get; set; } // Foreign key to Tutorial
 
-    public string? FeedbackText { get; set; }
+        public string? FeedbackText { get; set; }
 
-    public int? Rating { get; set; }
+        public int? Rating { get; set; }
 
-    public DateTime? SubmittedDate { get; set; }
+        public DateTime? SubmittedDate { get; set; }
 
-    public virtual Tutorial? Tutorial { get; set; }
+        // Navigation properties
+        public virtual Tutorial? Tutorial { get; set; }  // Link to Tutorial entity
 
-    public virtual User? User { get; set; }
+        public virtual IdentityUser? User { get; set; }  // Link to IdentityUser entity
+    }
 }

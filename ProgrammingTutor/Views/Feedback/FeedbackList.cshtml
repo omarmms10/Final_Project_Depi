@@ -1,0 +1,21 @@
+﻿@model IEnumerable<ProgrammingTutor.Models.Tutorial>
+
+<h2>Select a Tutorial to Provide Feedback</h2>
+
+@if (Model != null && Model.Any())
+{
+    <ul class="list-group">
+        @foreach (var tutorial in Model)
+        {
+            <li class="list-group-item">
+                <strong>@tutorial?.Title</strong> <br />
+                @tutorial?.Description <br />
+                <a href="/Feedback/Feedback/@tutorial?.TutorialId" class="btn btn-primary">Provide Feedback</a>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No completed tutorials available for feedback.</p>
+}

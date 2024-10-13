@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\FinalProjectMVC\\ProgrammingTutor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,8 +11,156 @@
       "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\kidprogrammingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\progress\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\progress\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\tutorial\\scratchtutorials.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\tutorial\\scratchtutorials.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\controllers\\tutorialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:controllers\\tutorialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\admin\\feedbacklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\admin\\feedbacklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\feedback\\feedbacklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\feedback\\feedbacklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\feedback\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\feedback\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\controllers\\progresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:controllers\\progresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\admin\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\admin\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\userrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\userrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\admin\\viewuserprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\admin\\viewuserprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\userprogressviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\userprogressviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\manageuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\manageuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\admin\\manageuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\admin\\manageuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\admin\\tutorials.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\admin\\tutorials.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\admin\\edittutorial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\admin\\edittutorial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\admin\\addtutorial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\admin\\addtutorial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\userachievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\userachievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\achievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\achievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\progress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\progress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\tutorialcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\tutorialcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|d:\\finalprojectmvc\\programmingtutor\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FinalProjectMVC\\ProgrammingTutor\\Migrations\\20241010182640_FixRelationships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241010182640_FixRelationships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FinalProjectMVC\\ProgrammingTutor\\Migrations\\20241010181744_UpdateUserForeignKeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241010181744_UpdateUserForeignKeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FinalProjectMVC\\ProgrammingTutor\\Migrations\\20241010175004_UpdateUserIdToString.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241010175004_UpdateUserIdToString.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +170,500 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Progress\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Progress\\Index.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Progress\\Index.cshtml",
+              "RelativeToolTip": "Views\\Progress\\Index.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T17:12:43.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAkwF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T20:23:29.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwAcAAAAuAAAA",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwBUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T21:51:20.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KidProgrammingContext.cs",
-              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\KidProgrammingContext.cs",
-              "RelativeDocumentMoniker": "Models\\KidProgrammingContext.cs",
-              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\KidProgrammingContext.cs",
-              "RelativeToolTip": "Models\\KidProgrammingContext.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAiwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T21:50:38.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-07T21:44:19.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Title": "ScratchTutorials.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Tutorial\\ScratchTutorials.cshtml",
+              "RelativeDocumentMoniker": "Views\\Tutorial\\ScratchTutorials.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Tutorial\\ScratchTutorials.cshtml",
+              "RelativeToolTip": "Views\\Tutorial\\ScratchTutorials.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-07T21:27:31.222Z",
+              "WhenOpened": "2024-10-10T17:17:36.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "TutorialController.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\TutorialController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TutorialController.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\TutorialController.cs",
+              "RelativeToolTip": "Controllers\\TutorialController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T01:05:22.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCoAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAuwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T21:26:23.91Z",
+              "WhenOpened": "2024-10-10T20:34:57.94Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KidProgrammingContext.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\KidProgrammingContext.cs",
+              "RelativeDocumentMoniker": "Models\\KidProgrammingContext.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\KidProgrammingContext.cs",
+              "RelativeToolTip": "Models\\KidProgrammingContext.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAAwKQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T16:56:56.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAcwH8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T14:42:40.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FeedBackController.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\FeedBackController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FeedBackController.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\FeedBackController.cs",
+              "RelativeToolTip": "Controllers\\FeedBackController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAQwFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T14:23:10.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FeedbackList.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\FeedbackList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\FeedbackList.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\FeedbackList.cshtml",
+              "RelativeToolTip": "Views\\Admin\\FeedbackList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T14:43:44.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Feedback.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Feedback\\Feedback.cshtml",
+              "RelativeDocumentMoniker": "Views\\Feedback\\Feedback.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Feedback\\Feedback.cshtml",
+              "RelativeToolTip": "Views\\Feedback\\Feedback.cshtml",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T14:29:19.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FeedbackList.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Feedback\\FeedbackList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Feedback\\FeedbackList.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Feedback\\FeedbackList.cshtml",
+              "RelativeToolTip": "Views\\Feedback\\FeedbackList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T14:34:48.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "Models\\Feedback.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Feedback.cs",
+              "RelativeToolTip": "Models\\Feedback.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T16:59:49.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACYAAAAAAAAAAAAkwDEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T20:33:37.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserManagement.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\UserManagement.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\UserManagement.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\UserManagement.cshtml",
+              "RelativeToolTip": "Views\\Admin\\UserManagement.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T15:01:05.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProgressController.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\ProgressController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProgressController.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Controllers\\ProgressController.cs",
+              "RelativeToolTip": "Controllers\\ProgressController.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAQwJIAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T16:51:20.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRolesViewModel.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\UserRolesViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserRolesViewModel.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\UserRolesViewModel.cs",
+              "RelativeToolTip": "Models\\UserRolesViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:12:05.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ViewUserProgress.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\ViewUserProgress.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ViewUserProgress.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\ViewUserProgress.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ViewUserProgress.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T15:02:01.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ManageUserViewModel.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\ManageUserViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ManageUserViewModel.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\ManageUserViewModel.cs",
+              "RelativeToolTip": "Models\\ManageUserViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:05:16.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserProgressViewModel.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\UserProgressViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserProgressViewModel.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\UserProgressViewModel.cs",
+              "RelativeToolTip": "Models\\UserProgressViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:05:47.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ManageUser.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\ManageUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ManageUser.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\ManageUser.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ManageUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T15:01:31.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Tutorials.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\Tutorials.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Tutorials.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\Tutorials.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Tutorials.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T14:44:15.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AddTutorial.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\AddTutorial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\AddTutorial.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\AddTutorial.cshtml",
+              "RelativeToolTip": "Views\\Admin\\AddTutorial.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAQwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T14:48:36.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EditTutorial.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\EditTutorial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EditTutorial.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Admin\\EditTutorial.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EditTutorial.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAQwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T14:48:56.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:00:38.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\SeedData.cs",
+              "RelativeDocumentMoniker": "Models\\SeedData.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\SeedData.cs",
+              "RelativeToolTip": "Models\\SeedData.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:00:35.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T20:31:33.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Achievement.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Achievement.cs",
+              "RelativeDocumentMoniker": "Models\\Achievement.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Achievement.cs",
+              "RelativeToolTip": "Models\\Achievement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:00:06.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserAchievement.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\UserAchievement.cs",
+              "RelativeDocumentMoniker": "Models\\UserAchievement.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\UserAchievement.cs",
+              "RelativeToolTip": "Models\\UserAchievement.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAcwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:00:14.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Progress.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Progress.cs",
+              "RelativeDocumentMoniker": "Models\\Progress.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Progress.cs",
+              "RelativeToolTip": "Models\\Progress.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T00:15:26.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Tutorial.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Tutorial.cs",
+              "RelativeDocumentMoniker": "Models\\Tutorial.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\Tutorial.cs",
+              "RelativeToolTip": "Models\\Tutorial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T01:58:24.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T20:33:23.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T20:33:03.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:00:44.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TutorialContent.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\TutorialContent.cs",
+              "RelativeDocumentMoniker": "Models\\TutorialContent.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\TutorialContent.cs",
+              "RelativeToolTip": "Models\\TutorialContent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:00:29.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA+wBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T16:56:26.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "Models\\UserRole.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Models\\UserRole.cs",
+              "RelativeToolTip": "Models\\UserRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:00:20.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20241010182640_FixRelationships.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Migrations\\20241010182640_FixRelationships.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241010182640_FixRelationships.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Migrations\\20241010182640_FixRelationships.cs",
+              "RelativeToolTip": "Migrations\\20241010182640_FixRelationships.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T18:26:40.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20241010181744_UpdateUserForeignKeys.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Migrations\\20241010181744_UpdateUserForeignKeys.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241010181744_UpdateUserForeignKeys.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Migrations\\20241010181744_UpdateUserForeignKeys.cs",
+              "RelativeToolTip": "Migrations\\20241010181744_UpdateUserForeignKeys.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T18:17:44.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20241010175004_UpdateUserIdToString.cs",
+              "DocumentMoniker": "D:\\FinalProjectMVC\\ProgrammingTutor\\Migrations\\20241010175004_UpdateUserIdToString.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241010175004_UpdateUserIdToString.cs",
+              "ToolTip": "D:\\FinalProjectMVC\\ProgrammingTutor\\Migrations\\20241010175004_UpdateUserIdToString.cs",
+              "RelativeToolTip": "Migrations\\20241010175004_UpdateUserIdToString.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:50:05.154Z"
             }
           ]
         }

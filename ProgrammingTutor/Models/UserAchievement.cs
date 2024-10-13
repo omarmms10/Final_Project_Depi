@@ -1,19 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 
-namespace ProgrammingTutor.Models;
-
-public partial class UserAchievement
+namespace ProgrammingTutor.Models
 {
-    public int UserAchievementId { get; set; }
+    public partial class UserAchievement
+    {
+        public int UserAchievementId { get; set; }
 
-    public int? UserId { get; set; }
+        public string? UserId { get; set; } // Foreign key to IdentityUser
 
-    public int? AchievementId { get; set; }
+        public int? AchievementId { get; set; } // Foreign key to Achievement
 
-    public DateTime? EarnedDate { get; set; }
+        public DateTime? EarnedDate { get; set; }
 
-    public virtual Achievement? Achievement { get; set; }
+        // Navigation properties
+        public virtual Achievement? Achievement { get; set; }  // Link to Achievement entity
 
-    public virtual User? User { get; set; }
+        public virtual IdentityUser? User { get; set; }  // Link to IdentityUser entity
+    }
 }

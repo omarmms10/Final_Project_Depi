@@ -1,29 +1,22 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
 
-namespace ProgrammingTutor.Models;
-
-public partial class User
+namespace ProgrammingTutor.Models
 {
-    public int UserId { get; set; }
+    public partial class User : IdentityUser
+    {
+        public int? Age { get; set; }
 
-    public string Username { get; set; } = null!;
+        public DateTime? DateJoined { get; set; }
 
-    public string Email { get; set; } = null!;
+        public bool? IsActive { get; set; }
 
-    public string PasswordHash { get; set; } = null!;
+        public virtual ICollection<Feedback> Feedbacks { get; set; } = new List<Feedback>();
 
-    public int? Age { get; set; }
+        public virtual ICollection<Progress> Progresses { get; set; } = new List<Progress>();
 
-    public DateTime? DateJoined { get; set; }
+        public virtual ICollection<UserAchievement> UserAchievements { get; set; } = new List<UserAchievement>();
 
-    public bool? IsActive { get; set; }
-
-    public virtual ICollection<Feedback> Feedbacks { get; set; } = new List<Feedback>();
-
-    public virtual ICollection<Progress> Progresses { get; set; } = new List<Progress>();
-
-    public virtual ICollection<UserAchievement> UserAchievements { get; set; } = new List<UserAchievement>();
-
-    public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
+        public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
+    }
 }

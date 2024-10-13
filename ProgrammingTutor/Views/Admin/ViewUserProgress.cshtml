@@ -1,0 +1,39 @@
+﻿<h2>Progress for @Model.User.Email</h2>
+
+<h3>Tutorial Progress</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tutorial</th>
+            <th>Completion Status</th>
+            <th>Started Date</th>
+            <th>Completed Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var progress in Model.ProgressList)
+        {
+            <tr>
+                <td>@progress.Tutorial.Title</td>
+                <td>@(progress.Completed ? "Completed" : "In Progress")</td>
+                <td>@progress.StartedDate?.ToString("MM/dd/yyyy") ?? "Not Started"</td>
+                <td>@progress.CompletedDate?.ToString("MM/dd/yyyy") ?? "Not Completed"</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Achievements</h3>
+@if (Model.Achievements.Count > 0)
+{
+    <ul>
+        @foreach (var achievement in Model.Achievements)
+        {
+            <li>@achievement.Achievement.Title - Earned on @achievement.EarnedDate?.ToString("MM/dd/yyyy")</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No achievements earned yet.</p>
+}

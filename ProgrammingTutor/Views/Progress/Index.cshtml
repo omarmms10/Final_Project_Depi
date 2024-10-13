@@ -1,0 +1,88 @@
+﻿@model IEnumerable<ProgrammingTutor.Models.Progress>
+
+<h2>Your Progress</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Success"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tutorial</th>
+            <th>Completion Status</th>
+            <th>Started Date</th>
+            <th>Completed Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var progress in Model)
+        {
+            <tr>
+                <td>
+                    @if (progress.Tutorial != null)
+                    {
+                        @progress.Tutorial.Title
+                    }
+                    else
+                    {
+                        <span>Tutorial Not Available</span>
+                    }
+                </td>
+                <td>
+                    @if (progress.Completed)
+                    {
+                        <span>Completed</span>
+                    }
+                    else
+                    {
+                        <span>In Progress</span>
+                    }
+                </td>
+                <td>
+                    @if (progress.StartedDate.HasValue)
+                    {
+                        @progress.StartedDate.Value.ToString("MM/dd/yyyy")
+                    }
+                    else
+                    {
+                        <span>Not Started</span>
+                    }
+                </td>
+                <td>
+                    @if (progress.CompletedDate.HasValue)
+                    {
+                        @progress.CompletedDate.Value.ToString("MM/dd/yyyy")
+                    }
+                    else
+                    {
+                        <span>Not Completed</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Recently Earned Achievements -->
+<div class="dashboard-section">
+    <h3>Recently Earned Achievements</h3>
+    @if (ViewBag.Achievements != null && ViewBag.Achievements.Count > 0)
+    {
+        <ul>
+            @foreach (var achievement in ViewBag.Achievements)
+            {
+                <li>
+                    <strong>@achievement.Achievement.Title</strong> - Earned on @achievement.EarnedDate?.ToString("MM/dd/yyyy")
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No achievements earned yet.</p>
+    }
+</div>

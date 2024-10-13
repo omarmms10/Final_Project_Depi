@@ -1,0 +1,45 @@
+﻿@{
+    var tutorial = ViewBag.Tutorial as ProgrammingTutor.Models.Tutorial;
+    var feedbacks = ViewBag.ExistingFeedbacks as List<ProgrammingTutor.Models.Feedback>;
+}
+
+<h2>Feedback for @tutorial?.Title</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Success"]
+    </div>
+}
+
+<h3>Submit Your Feedback</h3>
+<form method="post" action="/Feedback/SubmitFeedback/@tutorial?.TutorialId">
+    <div class="form-group">
+        <label for="feedbackText">Your Feedback</label>
+        <textarea id="feedbackText" name="feedbackText" class="form-control" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="rating">Rating (1-5)</label>
+        <input type="number" id="rating" name="rating" class="form-control" min="1" max="5" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+</form>
+
+<h3>Other Users' Feedback</h3>
+@if (feedbacks != null && feedbacks.Count > 0)
+{
+    <ul class="list-group">
+        @foreach (var feedback in feedbacks)
+        {
+            <li class="list-group-item">
+                <strong>@feedback.User?.UserName</strong> - Rating: @feedback.Rating <br />
+                <span>@feedback.FeedbackText</span> <br />
+                <small>Submitted on @feedback.SubmittedDate?.ToString("MM/dd/yyyy")</small>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No feedback available yet for this tutorial.</p>
+}
