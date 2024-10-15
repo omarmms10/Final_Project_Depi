@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FinalProjectMVC\\ProgrammingTutor\\ProgrammingTutor.csproj": {}
+    "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\ProgrammingTutor.csproj": {}
   },
   "projects": {
-    "D:\\FinalProjectMVC\\ProgrammingTutor\\ProgrammingTutor.csproj": {
+    "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\ProgrammingTutor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FinalProjectMVC\\ProgrammingTutor\\ProgrammingTutor.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\ProgrammingTutor.csproj",
         "projectName": "ProgrammingTutor",
-        "projectPath": "D:\\FinalProjectMVC\\ProgrammingTutor\\ProgrammingTutor.csproj",
-        "packagesPath": "C:\\Users\\Hello\\.nuget\\packages\\",
-        "outputPath": "D:\\FinalProjectMVC\\ProgrammingTutor\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\ProgrammingTutor.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hello\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

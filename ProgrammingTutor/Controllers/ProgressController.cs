@@ -39,15 +39,18 @@ public class ProgressController : Controller
 
         // Get the user's achievements and pass it via ViewBag
         var achievements = await _context.UserAchievements
-                                         .Include(ua => ua.Achievement)
-                                         .Where(ua => ua.UserId == userId)
-                                         .OrderByDescending(ua => ua.EarnedDate)
-                                         .ToListAsync();
+                                 .Include(ua => ua.Achievement)
+                                 .Where(ua => ua.UserId == userId)
+                                 .OrderByDescending(ua => ua.EarnedDate)
+                                 .ToListAsync();
+
         ViewBag.Achievements = achievements;
+
 
         return View(progressList);
     }
 
+    // Update user progress in a specific tutorial
     // Update user progress in a specific tutorial
     public async Task<IActionResult> UpdateProgress(int tutorialId, bool completed)
     {
@@ -80,9 +83,16 @@ public class ProgressController : Controller
         {
             // Update existing progress
             progress.Completed = completed;
+
             if (completed)
             {
+                // Set CompletedDate to the current date when marking as completed
                 progress.CompletedDate = DateTime.Now;
+            }
+            else
+            {
+                // If not completed, reset the CompletedDate
+                progress.CompletedDate = null;  // Optional: Clear the CompletedDate if progress is not completed
             }
 
             _context.Progresses.Update(progress);
@@ -107,6 +117,7 @@ public class ProgressController : Controller
 
         return RedirectToAction(nameof(Index));
     }
+
 
     // Helper function to grant an achievement based on completed tutorials
     private async Task<Achievement?> GrantAchievement(string userId, int completedTutorials)

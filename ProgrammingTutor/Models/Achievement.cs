@@ -6,6 +6,7 @@ namespace ProgrammingTutor.Models;
 public partial class Achievement
 {
     public int AchievementId { get; set; }
+    public string BadgeImagePath { get; set; }  // Add this for badge image
 
     public string Title { get; set; } = null!;
 

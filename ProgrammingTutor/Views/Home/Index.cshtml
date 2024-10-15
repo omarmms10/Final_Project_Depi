@@ -1,14 +1,93 @@
 ﻿@model IEnumerable<ProgrammingTutor.Models.Tutorial>
 
-<h2>Available Tutorials</h2>
-
-<h1>Hello! This is Programming Tutor for Kids</h1>
-
-<ul>
-    @foreach (var tutorial in Model)
-    {
-        <li>
-            <strong>@tutorial.Title</strong> - @tutorial.Description
-        </li>
+<style>
+    .hero-section {
+        background-color: #007BFF;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        border-radius: 15px;
+        margin-bottom: 30px;
     }
-</ul>
+
+    .features-section {
+        padding: 40px 20px;
+    }
+
+        .features-section h3 {
+            margin-top: 20px;
+        }
+
+    .tutorial-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border: none;
+    }
+
+        .tutorial-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 150, 136, 0.8);
+        }
+
+    .testimonials-section {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 30px;
+    }
+</style>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <h1>Welcome to Programming Tutor for Kids!</h1>
+    <p>Learn fun programming concepts through interactive tutorials and games.</p>
+    <a href="@Url.Action("Index", "Tutorial")" class="btn btn-light btn-lg">Get Started</a>
+</div>
+
+<!-- Features Section -->
+<div class="features-section">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <i class="fas fa-gamepad fa-3x"></i>
+            <h3>Fun Projects</h3>
+            <p>Interactive games and tutorials to learn coding.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-brain fa-3x"></i>
+            <h3>Creative Learning</h3>
+            <p>Build creativity through hands-on programming.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-chart-line fa-3x"></i>
+            <h3>Progress Tracking</h3>
+            <p>Track your learning progress with each tutorial completed.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Popular Tutorials Section -->
+<div class="container">
+    <h2 class="text-center mb-4">Popular Tutorials</h2>
+    <div class="row">
+        @foreach (var tutorial in Model.Take(3))
+        {
+            <div class="col-md-4">
+                <div class="card tutorial-card mb-4">
+                    <img src="~/images/@(string.IsNullOrEmpty(tutorial.ImagePath) ? "default.jpg" : tutorial.ImagePath)" class="card-img-top" alt="@tutorial.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">@tutorial.Title</h5>
+                        <a href="@Url.Action("Detail", "Tutorial", new { id = tutorial.TutorialId })" class="btn btn-primary">Start Learning</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Testimonials Section -->
+<div class="testimonials-section">
+    <h3>What Kids Say</h3>
+    <blockquote>"This is the best way to learn programming!" - A happy student</blockquote>
+    <blockquote>"I loved the Blockly games; they were so fun!" - Another student</blockquote>
+</div>
+

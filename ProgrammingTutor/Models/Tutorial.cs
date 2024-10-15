@@ -6,6 +6,7 @@ namespace ProgrammingTutor.Models;
 public partial class Tutorial
 {
     public int TutorialId { get; set; }
+    public required string ImagePath { get; set; } // Path to the image
 
     public string Title { get; set; } = null!;
 

@@ -1,15 +1,70 @@
 ﻿@model IEnumerable<ProgrammingTutor.Models.Progress>
 
-<h2>Your Progress</h2>
+<style>
+    .achievement-badge {
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .achievement-badge:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 150, 136, 0.6); /* Change color to match your theme */
+        }
+
+    .table {
+        margin-top: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+        .table thead {
+            background-color: #007BFF; /* Bootstrap primary color */
+            color: white;
+        }
+
+    .dashboard-section {
+        background-color: #f8f9fa; /* Light background for contrast */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    h2, h3 {
+        color: #007BFF; /* Match the color with your theme */
+    }
+
+    .achievement-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .achievement-item {
+        flex: 1 1 200px; /* Flexible sizing for badges */
+        margin: 10px;
+        text-align: center;
+    }
+
+    .achievement-title {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+</style>
+
+<h2 class="text-center">Your Progress</h2>
 
 @if (TempData["Success"] != null)
 {
-    <div class="alert alert-success">
+    <div class="alert alert-success text-center">
         @TempData["Success"]
     </div>
 }
 
-<table class="table">
+<!-- Progress Table -->
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>Tutorial</th>
@@ -35,11 +90,11 @@
                 <td>
                     @if (progress.Completed)
                     {
-                        <span>Completed</span>
+                        <span class="text-success">Completed</span>
                     }
                     else
                     {
-                        <span>In Progress</span>
+                        <span class="text-warning">In Progress</span>
                     }
                 </td>
                 <td>
@@ -72,14 +127,16 @@
     <h3>Recently Earned Achievements</h3>
     @if (ViewBag.Achievements != null && ViewBag.Achievements.Count > 0)
     {
-        <ul>
+        <div class="achievement-list">
             @foreach (var achievement in ViewBag.Achievements)
             {
-                <li>
-                    <strong>@achievement.Achievement.Title</strong> - Earned on @achievement.EarnedDate?.ToString("MM/dd/yyyy")
-                </li>
+                <div class="achievement-item">
+                    <img src="~/images/badges/@achievement.Achievement.BadgeImagePath" alt="@achievement.Achievement.Title Badge" class="achievement-badge" style="width: 80px; height: 80px;">
+                    <div class="achievement-title">@achievement.Achievement.Title</div>
+                    <div>Earned on @achievement.EarnedDate?.ToString("MM/dd/yyyy")</div>
+                </div>
             }
-        </ul>
+        </div>
     }
     else
     {

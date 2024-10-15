@@ -1,0 +1,96 @@
+﻿@model IEnumerable<ProgrammingTutor.Models.Tutorial>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4" style="font-family: 'Comic Sans MS', sans-serif; color: #007BFF;">
+        🚀 Select a Fun Programming Tutorial to Begin 🚀
+    </h2>
+
+    <div class="row">
+        @foreach (var tutorial in Model)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card tutorial-card shadow-lg">
+                    <img src="~/images/@tutorial.ImagePath" class="card-img-top" alt="@tutorial.Title">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-family: 'Comic Sans MS', sans-serif; color: #007BFF;">
+                            @tutorial.Title
+                        </h5>
+                        <p class="card-description" style="font-family: 'Comic Sans MS', sans-serif; color: #333;">
+                            @tutorial.Description
+                        </p>
+                        <a href="@Url.Action("Detail", "Tutorial", new { id = tutorial.TutorialId })" class="btn btn-lg btn-primary tutorial-link">
+                            Start Tutorial
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- CSS for enhanced design -->
+<style>
+    /* Full page filling */
+    body {
+        background-color: #F4F4F4;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .tutorial-card {
+        border: none;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .tutorial-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 20px;
+        position: relative;
+    }
+
+    /* Initially hide the description with 0 height and opacity */
+    .card-description {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Reveal the description on hover */
+    .tutorial-card:hover .card-description {
+        opacity: 1;
+        max-height: 100px; /* Adjust max height based on expected description length */
+    }
+
+    .tutorial-link {
+        background-color: #007BFF;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        font-family: 'Comic Sans MS', sans-serif;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+        .tutorial-link:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+</style>

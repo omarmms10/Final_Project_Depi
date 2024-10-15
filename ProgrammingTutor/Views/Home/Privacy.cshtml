@@ -1,6 +1,93 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewBag.Title = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container mt-5">
+    <h2 class="text-center mb-4 privacy-header">
+        Privacy Policy
+    </h2>
+
+    <div class="privacy-content">
+        <h4>Introduction</h4>
+        <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect the personal information of children and users on our platform.</p>
+
+        <h4>1. Information We Collect</h4>
+        <ul>
+            <li><strong>Personal Information:</strong> Basic details like name, email, age, and username provided during account registration.</li>
+            <li><strong>Usage Data:</strong> Non-personal data such as browser type, device type, and IP address to improve platform functionality.</li>
+            <li><strong>Progress & Achievements:</strong> Monitoring progress and achievements to tailor the learning experience for each child.</li>
+        </ul>
+
+        <h4>2. How We Use the Information</h4>
+        <ul>
+            <li>Personalizing user experiences and recommending tutorials based on progress.</li>
+            <li>Managing accounts and providing effective customer support.</li>
+            <li>Analyzing platform usage and improving performance over time.</li>
+            <li><strong>Note:</strong> We do not share or sell your information to third parties.</li>
+        </ul>
+
+        <h4>3. Children's Privacy</h4>
+        <p>We are committed to protecting the privacy of children under 13 years. We collect only what is necessary for educational purposes and follow all legal standards to safeguard their data. If a parent or guardian believes their child has provided personal data without consent, they can contact us to request deletion.</p>
+
+        <h4>4. Data Security</h4>
+        <p>We use secure technologies to protect user data from unauthorized access. However, no system is entirely foolproof, so we encourage users to maintain strong credentials.</p>
+
+        <h4>5. User Rights</h4>
+        <p>Users can view, update, or delete their information via their profile page. Parents or guardians can contact us to manage or delete their child’s data.</p>
+
+        <h4>6. Cookies & Tracking Technologies</h4>
+        <p>We use cookies to enhance user experience, store preferences, and analyze platform usage. Disabling cookies may affect some functionalities of the site.</p>
+
+        <h4>7. Changes to the Privacy Policy</h4>
+        <p>We may update this Privacy Policy periodically. Any changes will be reflected on this page with the new effective date.</p>
+
+        <h4>8. Contact Us</h4>
+        <p>If you have questions or concerns about this Privacy Policy, feel free to contact us:</p>
+        <p><strong>Email:</strong> programmingtutor_support@gmail.com</p>
+        <p><strong>Phone:</strong> +20134679424</p>
+    </div>
+</div>
+
+<!-- CSS for Privacy Policy Page -->
+<style>
+    body {
+        background-color: #F4F4F4;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .privacy-header {
+        color: #007BFF;
+        font-family: Arial, sans-serif; /* Normal font */
+    }
+
+    .privacy-content {
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s;
+    }
+
+        .privacy-content:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .privacy-content h4 {
+            color: #007BFF;
+            margin-top: 20px;
+        }
+
+        .privacy-content p, .privacy-content ul {
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .privacy-content ul {
+            margin: 10px 0 20px 20px;
+        }
+</style>

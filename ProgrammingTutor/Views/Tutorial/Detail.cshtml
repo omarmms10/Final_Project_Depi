@@ -1,0 +1,130 @@
+﻿@model ProgrammingTutor.Models.Tutorial
+
+<h2 class="text-center" style="color: #007BFF;">@Model.Title</h2>
+
+<!-- Display the tutorial content based on its type -->
+<div class="tutorial">
+    @if (Model.Title.Contains("Dot"))
+    {
+        <iframe src="https://scratch.mit.edu/projects/10124551/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    }
+    else if (Model.Title.Contains("Puzzle"))
+    {
+        <!-- Load Puzzle Game -->
+        <iframe src="https://blockly.games/puzzle?lang=en" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("Maze"))
+    {
+        <!-- Load Maze Game -->
+        <iframe src="https://blockly.games/maze?lang=en" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("Bird"))
+    {
+        <!-- Load Bird Game -->
+        <iframe src="https://blockly.games/bird?lang=en" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("Duck"))
+    {
+        <!-- Load Duck Game -->
+        <iframe src="https://blockly.games/pond-duck?lang=en" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("Turtle"))
+    {
+        <!-- Load Turtle Game -->
+        <iframe src="https://blockly.games/turtle?lang=en" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("Googly"))
+    {
+        <!-- Load google Game -->
+        <iframe src="https://www.tynker.com/ide/v3?type=diy&p=58910b50af92316a528b45ee&actionType=recommendation&actionSlug=googly-eyes" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("Tofu"))
+    {
+        <!-- Load google Game -->
+        <iframe src="https://www.tynker.com/ide/v3?type=diy&p=5890f545af9231c3528b457a&actionType=recommendation&actionSlug=talking-tofu" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("Jungle"))
+    {
+        <!-- Load jungle Game -->
+        <iframe src="https://www.tynker.com/code/python/toxic-jungle/python-basics/?c=setup&#introduction" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("counter-hack"))
+    {
+        <!-- Load counter-hack Game -->
+        <iframe src="https://www.tynker.com/code/js/counter-hack/javascript-basics/?c=setup&#introduction" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("sequence-puzzles"))
+    {
+         <!-- Load sequence-puzzles Game -->
+         <iframe src="https://www.tynker.com/code/python/l400/unit-1/sequence-puzzles/?c=setup&" frameborder="0" scrolling="no"></iframe>
+    }
+    else if (Model.Title.Contains("Dragon Food"))
+    {
+         <!-- Load Dragon Food Game -->
+         <iframe src="https://www.tynker.com/ide/v3?type=diy&p=56aa815faf9231e21f8b4644" frameborder="0" scrolling="no"></iframe>
+    }
+
+    <form method="post" action="/Progress/UpdateProgress?tutorialId=@Model.TutorialId&completed=true">
+        <button class="complete-button">✅ Mark as Complete</button>
+    </form>
+    <a href="@Url.Action("Index", "Tutorial")" class="back-link" >🔙 Back to Tutorials</a>
+</div>
+
+
+<!-- CSS for back link -->
+<style>
+    .back-link {
+        display: inline-block; /* Change to inline-block for text-only button */
+        margin: 10px auto; /* Center align with margin */
+        padding: 10px 20px; /* Match padding for the text */
+        text-align: center;
+        font-size: 1.2em;
+        color: #007BFF; /* Link color */
+        border: 2px solid #007BFF; /* Add border */
+        border-radius: 10px; /* Rounded corners */
+        text-decoration: none;
+        font-family: 'Comic Sans MS', sans-serif;
+        cursor: pointer; /* Change cursor to pointer */
+        transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    }
+
+        .back-link:hover {
+            background-color: #007BFF; /* Lighter background on hover */
+            color: white;
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+
+
+
+    
+
+    .complete-button {
+        padding: 10px 20px;
+        font-size: 1.1em;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+        .complete-button:hover {
+            background-color: #45a049;
+        }
+    .tutorial {
+        text-align: center;
+        padding: 20px;
+        background-color: #F9F9F9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    
+</style>

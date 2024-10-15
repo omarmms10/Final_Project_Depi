@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,99 +8,256 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProgrammingTutor.styles.css" asp-append-version="true" />
+    <!-- Font Awesome 5 Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <style>
+        /* Add a professional glowing effect */
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .glowing-text {
+        text-shadow: 0 0 2px rgba(255, 255, 255, 0.4), 0 0 4px rgba(255, 255, 255, 0.3);
+        transition: text-shadow 0.3s ease, color 0.3s ease;
+    }
+
+    /* Stronger glow on hover */
+    .glowing-text:hover {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+        color: #ffffff;
+    }
+
+    /* Navbar background shadow */
+    .navbar {
+        background: #343a40 !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add more padding to navbar links */
+    .nav-link {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Tweak the mobile menu button */
+    .navbar-toggler {
+        border: none;
+        background-color: transparent;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+        /* Glowing effect for buttons */
+        .btn-glow {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(0, 123, 255, 1);
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px; /* Slightly smaller font size */
+        }
+
+            footer a {
+                color: #17a2b8;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+                footer a:hover {
+                    color: #00d3ff;
+                }
+
+        .social-links a {
+            margin: 0 10px; /* Reduced margin between icons */
+            font-size: 18px; /* Adjusted icon size */
+        }
+
+        .social-links i {
+            margin-right: 5px;
+        }
+
+        /* Main container */
+        .container {
+            margin-top: 30px;
+        }
+
+        /* Card and panel design */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Add glowing border to admin links */
+        .nav-link.admin {
+            color: #ffc107 !important;
+            text-shadow: 0 0 5px rgba(255, 193, 7, 0.8);
+        }
+
+        
+    </style>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProgrammingTutor</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Brand Logo -->
+                <a class="navbar-brand glowing-text" asp-area="" asp-controller="Home" asp-action="Index">ProgrammingTutor</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <!-- Add the Tutorials link -->
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Tutorial" asp-action="ScratchTutorials">Tutorials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Progress" asp-action="Index">Progress</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Feedback" asp-action="FeedbackList">Feedback</a>
-                        </li>
+
+                <!-- Navbar Links -->
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between w-100">
+                    <!-- Regular Navigation Links (only for authenticated users) -->
+                    @if (User.Identity.IsAuthenticated)
+                    {
                         <ul class="navbar-nav">
-                            @if (User.IsInRole("Admin"))
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="UserManagement">Admin Dashboard</a>
-                                </li>
-                            }
-                        </ul>
-                        <ul class="navbar-nav">
-                            <!-- Admin section for tutorial and feedback management -->
-                            @if (User.IsInRole("Admin"))
-                            {
-                                
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-controller="Admin" asp-action="FeedbackList">Manage Feedback</a>
-                                </li>
-                            }
-                        </ul>
-
-
-
-
-
-                    </ul>
-                    <ul class="navbar-nav">
-                        <!-- Add login/register or manage/logout based on authentication status -->
-                        @if (User.Identity.IsAuthenticated)
-                        {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index">Manage Account</a>
+                                <a class="nav-link btn btn-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-link text-light" asp-area="" asp-controller="Tutorial" asp-action="Index">Tutorials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-link text-light" asp-area="" asp-controller="Progress" asp-action="Index">Progress</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-link text-light" asp-controller="Feedback" asp-action="FeedbackList">Feedback</a>
+                            </li>
+                        </ul>
+
+                        <!-- Admin Dashboard and Manage Account for authenticated users -->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-link text-light" asp-area="Identity" asp-page="/Account/Manage/Index">Manage Account</a>
                             </li>
                             <li class="nav-item">
                                 <form method="post" asp-area="Identity" asp-page="/Account/Logout">
-                                    <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                                    <button type="submit" class="nav-link btn btn-link text-light">Logout</button>
                                 </form>
                             </li>
-                        }
-                        else
-                        {
+
+                            <!-- Admin Links -->
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link glowing-text" asp-area="" asp-controller="Admin" asp-action="UserManagement">Admin Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link glowing-text" asp-controller="Admin" asp-action="FeedbackList">Manage Feedback</a>
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <!-- If user is not authenticated, display Login and Register -->
+                        <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                                <a class="nav-link text-light glowing-text" asp-area="Identity" asp-page="/Account/Login">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                                <a class="nav-link text-light glowing-text" asp-area="Identity" asp-page="/Account/Register">Register</a>
                             </li>
-                        }
-                    </ul>
+                        </ul>
+                    }
                 </div>
             </div>
         </nav>
     </header>
+
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer bg-dark text-light py-2">
         <div class="container">
-            &copy; 2024 - ProgrammingTutor - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row align-items-center">
+                <!-- Social Media Icons (Left) -->
+                <div class="col-4 text-start">
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="text-light mx-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="text-light mx-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="text-light mx-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="text-light mx-2">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Copyright (Center) -->
+                <div class="col-4 text-center">
+                    <p class="mb-0">&copy; 2024 - ProgrammingTutor</p>
+                </div>
+
+                <!-- Footer Links (Right) -->
+                <div class="col-4 text-end">
+                    <a class="nav-link btn btn-link text-light" asp-area="" asp-controller="Home" asp-action="">Terms Of Services</a>
+                    <a class="nav-link btn btn-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy and Policy</a>
+                    <a class="nav-link btn btn-link text-light" asp-area="" asp-controller="Home" asp-action="">Contact Us</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+
+
+
+    
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

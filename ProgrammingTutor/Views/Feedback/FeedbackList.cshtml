@@ -1,21 +1,32 @@
 ﻿@model IEnumerable<ProgrammingTutor.Models.Tutorial>
 
-<h2>Select a Tutorial to Provide Feedback</h2>
-
-@if (Model != null && Model.Any())
-{
-    <ul class="list-group">
-        @foreach (var tutorial in Model)
-        {
-            <li class="list-group-item">
-                <strong>@tutorial?.Title</strong> <br />
-                @tutorial?.Description <br />
-                <a href="/Feedback/Feedback/@tutorial?.TutorialId" class="btn btn-primary">Provide Feedback</a>
-            </li>
-        }
-    </ul>
-}
-else
-{
-    <p>No completed tutorials available for feedback.</p>
-}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-12">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h2 class="mb-0">Select a Tutorial to Provide Feedback</h2>
+                </div>
+                <div class="card-body">
+                    @if (Model != null && Model.Any())
+                    {
+                        <ul class="list-group list-group-flush">
+                            @foreach (var tutorial in Model)
+                            {
+                                <li class="list-group-item mb-3 p-4 bg-light rounded border-0 shadow-sm">
+                                    <h4 class="text-primary font-weight-bold">@tutorial?.Title</h4>
+                                    <p class="text-muted">@tutorial?.Description</p>
+                                    <a href="/Feedback/Feedback/@tutorial?.TutorialId" class="btn btn-outline-primary btn-lg">Provide Feedback</a>
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-center text-muted">No completed tutorials available for feedback.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
