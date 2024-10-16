@@ -1,8 +1,13 @@
-﻿@model ProgrammingTutor.Models.Tutorial
+﻿
+
+@model ProgrammingTutor.Models.Tutorial
 
 <h2>Edit Tutorial</h2>
 
 <form asp-action="EditTutorial" method="post">
+    <!-- Hidden field to store the TutorialId -->
+    <input type="hidden" asp-for="TutorialId" />
+
     <div class="form-group">
         <label asp-for="Title" class="control-label"></label>
         <input asp-for="Title" class="form-control" />
@@ -25,6 +30,13 @@
         <label asp-for="Duration" class="control-label"></label>
         <input asp-for="Duration" class="form-control" />
         <span asp-validation-for="Duration" class="text-danger"></span>
+    </div>
+
+    <!-- Add ImagePath input for editing the image -->
+    <div class="form-group">
+        <label asp-for="ImagePath" class="control-label"></label>
+        <input asp-for="ImagePath" class="form-control" />
+        <span asp-validation-for="ImagePath" class="text-danger"></span>
     </div>
 
     <button type="submit" class="btn btn-primary">Update Tutorial</button>

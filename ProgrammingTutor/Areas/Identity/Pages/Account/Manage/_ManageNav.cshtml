@@ -2,6 +2,31 @@
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }
+
+<style>
+    /* Ensure the nav items in the settings list are always visible */
+    .nav-pills .nav-link {
+        display: block; /* Ensure each link takes its own line */
+        color: #007BFF; /* Set a default text color */
+        padding: 10px 15px; /* Add some padding to make them easier to click */
+        text-decoration: none; /* Remove underline */
+        border-radius: 4px; /* Add a slight rounding */
+    }
+
+        /* On hover, change background color */
+        .nav-pills .nav-link:hover {
+            background-color: #e9ecef; /* Light background on hover */
+        }
+
+        /* Active state */
+        .nav-pills .nav-link.active,
+        .nav-pills .nav-link:focus {
+            background-color: #007BFF; /* Highlight active link */
+            color: white !important; /* Change active text color to white */
+            font-weight: bold; /* Optional: Make the active link bold */
+        }
+</style>
+
 <ul class="nav nav-pills flex-column">
     <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
     <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>

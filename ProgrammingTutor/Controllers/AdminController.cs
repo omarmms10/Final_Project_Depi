@@ -39,15 +39,30 @@ public class AdminController : Controller
     [HttpPost]
     public async Task<IActionResult> AddTutorial(Tutorial tutorial)
     {
-        if (ModelState.IsValid)
+        if (!ModelState.IsValid)
         {
-            tutorial.CreatedDate = DateTime.Now;
+            return View(tutorial);
+        }
+
+        try
+        {
+            // Add the tutorial logic here
             _context.Tutorials.Add(tutorial);
             await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Tutorial added successfully!";
             return RedirectToAction(nameof(Tutorials));
         }
-        return View(tutorial);
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = $"Error adding tutorial: {ex.Message}";
+            return View(tutorial);
+        }
     }
+
+
+
+
 
     // GET: /Admin/EditTutorial/{id}
     public async Task<IActionResult> EditTutorial(int id)
@@ -62,53 +77,57 @@ public class AdminController : Controller
 
     // POST: /Admin/EditTutorial/{id}
     [HttpPost]
-    public async Task<IActionResult> EditTutorial(int id, Tutorial updatedTutorial)
+    public async Task<IActionResult> EditTutorial(Tutorial tutorial)
     {
-        if (id != updatedTutorial.TutorialId)
+        if (!ModelState.IsValid)
         {
-            return NotFound();
+            return View(tutorial);
         }
 
-        if (ModelState.IsValid)
+        try
         {
-            var tutorial = await _context.Tutorials.FindAsync(id);
-            if (tutorial != null)
-            {
-                tutorial.Title = updatedTutorial.Title;
-                tutorial.Description = updatedTutorial.Description;
-                tutorial.Level = updatedTutorial.Level;
-                tutorial.Duration = updatedTutorial.Duration;
+            // Edit tutorial logic here
+            _context.Tutorials.Update(tutorial);
+            await _context.SaveChangesAsync();
 
-                _context.Tutorials.Update(tutorial);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Tutorials));
-            }
+            TempData["SuccessMessage"] = "Tutorial updated successfully!";
+            return RedirectToAction(nameof(Tutorials));
         }
-        return View(updatedTutorial);
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = $"Error updating tutorial: {ex.Message}";
+            return View(tutorial);
+        }
     }
+
+
 
     // POST: /Admin/DeleteTutorial/{id}
     [HttpPost]
-    [HttpPost]
-    [HttpPost]
     public async Task<IActionResult> DeleteTutorial(int id)
     {
-        // Find the tutorial
-        var tutorial = await _context.Tutorials.FindAsync(id);
-
-        if (tutorial != null)
+        try
         {
-            // Find and delete related progress entries
-            var relatedProgress = _context.Progresses.Where(p => p.TutorialId == id);
-            _context.Progresses.RemoveRange(relatedProgress);  // Remove related progress entries
+            var tutorial = await _context.Tutorials.FindAsync(id);
+            if (tutorial == null)
+            {
+                TempData["ErrorMessage"] = "Tutorial not found.";
+                return RedirectToAction(nameof(Tutorials));
+            }
 
-            // Remove the tutorial
             _context.Tutorials.Remove(tutorial);
             await _context.SaveChangesAsync();
-        }
 
-        return RedirectToAction(nameof(Tutorials));
+            TempData["SuccessMessage"] = "Tutorial deleted successfully!";
+            return RedirectToAction(nameof(Tutorials));
+        }
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = $"Error deleting tutorial: {ex.Message}";
+            return RedirectToAction(nameof(Tutorials));
+        }
     }
+
 
 
 

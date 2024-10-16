@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|c:\\users\\admin\\downloads\\final_project_depi-master\\final_project_depi-master\\programmingtutor\\views\\shared\\_websitelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\shared\\_websitelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|c:\\users\\admin\\downloads\\final_project_depi-master\\final_project_depi-master\\programmingtutor\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|c:\\users\\admin\\downloads\\final_project_depi-master\\final_project_depi-master\\programmingtutor\\views\\tutorial\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:views\\tutorial\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|c:\\users\\admin\\downloads\\final_project_depi-master\\final_project_depi-master\\programmingtutor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1A23A09-6E06-4A47-B9E6-CE1F8FBD7B2C}|ProgrammingTutor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\Views\\Tutorial\\Detail.cshtml",
-              "RelativeDocumentMoniker": "Views\\Tutorial\\Detail.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\Views\\Tutorial\\Detail.cshtml",
-              "RelativeToolTip": "Views\\Tutorial\\Detail.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAADoAAAArAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "_WebsiteLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\Views\\Shared\\_WebsiteLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_WebsiteLayout.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\Views\\Shared\\_WebsiteLayout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_WebsiteLayout.cshtml*",
+              "ViewState": "AgIAABwBAAAAAAAAAAAAAFgBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T00:58:58.591Z",
+              "WhenOpened": "2024-10-16T15:16:54.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T13:59:19.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
-              "ViewState": "AgIAAOwAAAAAAAAAAADwv/IAAABuAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Final_Project_Depi-master\\Final_Project_Depi-master\\ProgrammingTutor\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAJ4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:57:56.889Z",
+              "WhenOpened": "2024-10-16T13:30:20.015Z",
               "EditorCaption": ""
             }
           ]

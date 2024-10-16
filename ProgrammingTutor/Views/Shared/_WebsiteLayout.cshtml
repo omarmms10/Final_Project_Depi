@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Programming Tutor for Kids</title>
+    <meta name="description" content="Programming Tutor is a fun, professional, and user-friendly platform designed to teach kids coding skills.">
+    <meta name="keywords" content="programming, coding, kids, tutor, education, technology">
+
+    <link href="~/images/logoTutor.png" rel="icon">
+    <link href="assets/img/programming-tutor-logo.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        a {
+            color: #007BFF; /* Default link color */
+        }
+
+            a:hover {
+                color: #0056b3; /* Darker shade on hover */
+            }
+
+        .btn-get-started {
+            background-color: #007BFF;
+            border-color: #007BFF;
+            color: #fff;
+        }
+
+            .btn-get-started:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+        /* Change link colors globally to #007BFF */
+        a {
+            color: #007BFF;
+        }
+
+            /* Change hover color for links */
+            a:hover {
+                color: #0056b3; /* Darker shade on hover */
+            }
+
+        /* Change button colors globally */
+        .btn {
+            background-color: #007BFF;
+            border-color: #007BFF;
+            color: #fff; /* Ensure text is readable */
+        }
+
+            /* Change hover color for buttons */
+            .btn:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+        #header a {
+            color: #007BFF;
+        }
+
+            /* Change hover color for links in the header */
+            #header a:hover {
+                color: #0056b3; /* Darker shade on hover */
+            }
+
+        /* Change the background color of the "Get Started" button */
+        #header .btn-getstarted {
+            background-color: #007BFF;
+            border-color: #007BFF;
+            color: #fff; /* Ensure the text stays readable */
+        }
+
+            /* Change the hover color of the "Get Started" button */
+            #header .btn-getstarted:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        /* Optional: Change the mobile nav toggle icon color */
+        #header .mobile-nav-toggle {
+            color: #007BFF;
+        }
+
+            /* Change hover color for the mobile nav toggle */
+            #header .mobile-nav-toggle:hover {
+                color: #0056b3;
+            }
+
+        .main a {
+            color: #007BFF;
+        }
+
+            /* Change hover color for links in the main section */
+            .main a:hover {
+                color: #0056b3; /* Darker shade on hover */
+            }
+
+        /* Change background color of the "Get Started" button in the hero section */
+        .main .btn-get-started {
+            background-color: #007BFF;
+            border-color: #007BFF;
+            color: #fff; /* Ensure the text stays readable */
+        }
+
+            /* Change hover color of the "Get Started" button */
+            .main .btn-get-started:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        /* Change color for the more-btn in the Why Us section */
+        .main .more-btn {
+            color: #007BFF;
+        }
+
+            /* Change hover color for the more-btn */
+            .main .more-btn:hover {
+                color: #0056b3;
+            }
+
+        /* Change colors of icons in the Features section */
+        .main .features-item i {
+            color: #007BFF; /* Change this to the desired color */
+        }
+        /* Change link colors to #007BFF */
+        #footer a {
+            color: #007BFF;
+        }
+
+            /* Change hover color */
+            #footer a:hover {
+                color: #0056b3; /* Slightly darker shade for hover */
+            }
+
+        /* Change button color (for the newsletter subscribe button) */
+        #footer input[type="submit"] {
+            background-color: #007BFF;
+            border-color: #007BFF;
+        }
+
+            /* Change button hover color */
+            #footer input[type="submit"]:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+    </style>
+
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <div class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename" style="color:#007BFF">Programming Tutor</h1>
+            </div>
+
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    @* <li><a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Login">Enroll Now</a></li> *@
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" asp-area="Identity" asp-page="/Account/Login">Get Started</a>
+
+        </div>
+    </header>
+
+    <main class="main">
+        @RenderBody()
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
+                <p data-aos="fade-up" data-aos-delay="200">We are a team of talented designers making websites with Bootstrap</p>
+                <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="courses.html" class="btn-get-started">Get Started</a>
+                </div>
+            </div>
+        </section><!-- /Hero Section -->
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Learn to Code with Fun!</h2>
+                <p>Programming Tutor is dedicated to teaching kids the basics of coding in a fun and engaging way. Our lessons are interactive, easy to follow, and designed to inspire creativity.</p>
+            </div>
+        </section>
+
+        <!-- Counts Section -->
+        <section id="counts" class="section counts light-background">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Happy Students</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Coding Courses</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Interactive Events</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Expert Tutors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="section why-us">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="why-box">
+                            <h3>Why Choose Our Programming Classes?</h3>
+                            <p>
+                                Our coding classes are designed to be fun, engaging, and educational. We provide interactive lessons that simplify complex programming concepts, ensuring every child enjoys learning to code.
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex align-items-stretch">
+                        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-xl-4">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi bi-clipboard-data"></i>
+                                    <h4>Interactive Learning</h4>
+                                    <p>Children learn programming through interactive exercises, puzzles, and hands-on projects.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi bi-gem"></i>
+                                    <h4>Certified Tutors</h4>
+                                    <p>Our tutors are certified experts in programming and trained to teach young learners effectively.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi bi-inboxes"></i>
+                                    <h4>Project-Based Learning</h4>
+                                    <p>Each student works on real-world projects, creating their own games, websites, and apps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features section">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="features-item">
+                            <i class="bi bi-eye" style="color: #ffbb2c;"></i>
+                            <h3><a href="#" class="stretched-link">Game Development</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="features-item">
+                            <i class="bi bi-infinity" style="color: #5578ff;"></i>
+                            <h3><a href="#" class="stretched-link">Website Design</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="features-item">
+                            <i class="bi bi-mortarboard" style="color: #e80368;"></i>
+                            <h3><a href="#" class="stretched-link">Beginner to Advanced</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="features-item">
+                            <i class="bi bi-nut" style="color: #e361ff;"></i>
+                            <h3><a href="#" class="stretched-link">Coding Challenges</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+
+
+    
+
+    <footer class="border-top footer bg-dark text-light">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+
+
+            <!-- Center Section: Copyright -->
+            <span class="text-center my-2 my-md-0">&copy; 2024 - ProgrammingTutor</span>
+
+            <!-- Right Section: Links -->
+            <div class="footer-links d-flex flex-column flex-md-row align-items-center">
+                <a asp-area="" asp-controller="Home" asp-action="Privacy" class="ms-md-3 text-light text-decoration-none">Privacy</a>
+                <a asp-area="" asp-controller="Home" asp-action="TermsOfServices" class="ms-md-3 text-light text-decoration-none">Terms of Service</a>
+                <a asp-area="" asp-controller="Home" asp-action="ContactUs" class="ms-md-3 text-light text-decoration-none">Contact Us</a>
+            </div>
+
+            <!-- Right Section: Social Media Icons -->
+            <div class="social-icons d-flex mt-3 mt-md-0">
+                <a href="https://www.facebook.com" class="text-light mx-2 text-decoration-none" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://www.instagram.com" class="text-light mx-2 text-decoration-none" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.linkedin.com" class="text-light mx-2 text-decoration-none" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://www.twitter.com" class="text-light mx-2 text-decoration-none" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

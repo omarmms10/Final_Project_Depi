@@ -85,7 +85,8 @@ app.UseStatusCodePages(async context =>
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=WebsiteLayout}/{id?}");
+
 
 app.MapControllerRoute(
     name: "tutorials",

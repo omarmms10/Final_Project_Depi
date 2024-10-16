@@ -28,11 +28,23 @@ namespace ProgrammingTutor.Controllers
             return View(tutorials);
         }
 
-        public IActionResult Privacy()
+        public IActionResult WebsiteLayout()
         {
             return View();
         }
 
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+        public IActionResult TermsOfServices()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
