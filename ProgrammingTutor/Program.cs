@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using ProgrammingTutor.Models;
 
@@ -10,6 +11,11 @@ builder.Services.AddControllersWithViews();
 // Register your DbContext and connect Identity
 builder.Services.AddDbContext<KidProgrammingContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
+{
+    options.TokenLifespan = TimeSpan.FromDays(2); // Change to your preferred lifespan
+});
 
 // Add Identity services and configure it to use your DbContext
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
@@ -21,7 +27,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
     options.Lockout.MaxFailedAccessAttempts = 5;
     options.User.RequireUniqueEmail = true;
-    options.SignIn.RequireConfirmedEmail = false;
+    options.SignIn.RequireConfirmedEmail = true;
 })
 .AddRoles<IdentityRole>() // Add role support
 .AddEntityFrameworkStores<KidProgrammingContext>();
